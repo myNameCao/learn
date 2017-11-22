@@ -5,5 +5,11 @@
 ### ［2］ 作用域插槽   
 父级别中有特殊的slot－scope 的 <template>元素   slot-scope 的值将被用作为一个临时变量名 该值从子组件传递过来的prop  对象
   ## 动态组件
-  ***
-  通过使用的<component>
+   --------------
+
+ 通过使用的 \<compond>
+ 
+    void main()
+    {
+    printf("Hello, Markdown.");
+    }
