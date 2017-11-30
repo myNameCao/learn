@@ -9,3 +9,7 @@ this.set("context", process.cwd());
 
 ```
 #### process.cwd()即webpack运行所在的目录（等同package.json所在目录)
+
+```js 
+path.resolv（'./src'）// 返回的当前文件的的绝对路径加上后面的路劲
+```
