@@ -39,5 +39,25 @@ return a - b;
  + ## 偏函数用法
  创建一个调用另外一个部分————参数或则变量已经预设的函数————的函数的
 用法
-   
-});
+```js 
+var toString = Object.prototype.toString;
+var isString = function (obj) {
+return toString.call(obj) == '[object String]';
+};
+var isFunction = function (obj) {
+return toString.call(obj) == '[object Function]';
+};
+<=========================> 对比偏函数的用法 闭包
+var isType = function (type) {
+return function (obj) {
+return toString.call(obj) == '[object ' + type + ']';
+};
+};
+var isString = isType('String');
+var isFunction = isType('Function');
+
+
+```
+
+
+
