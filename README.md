@@ -7,9 +7,4 @@
   ## 动态组件
    --------------
 
- 通过使用的 \<compond>
- 
-    void main()
-    {
-    printf("Hello, Markdown.");
-    }
+
