@@ -23,7 +23,7 @@
   ```js
  
    tar -cvf  direstory.tar  filename  // 打包filename文件
-   tar -xvf   direstoru.tar  
+    tar -xvf   direstoru.tar  
    tar -zcvf direstory.tar filename //  打包压缩 
    tat  -zxvf  direstory.tar 解压
        
