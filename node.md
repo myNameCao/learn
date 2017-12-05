@@ -58,6 +58,11 @@ var isFunction = isType('Function');
 
 
 ```
++ ## events 模块  事件的订阅和发布
+
+node 事件 没有 preventDefault() stopPropagation() 和stopImmediatePagation() 
+
+
 
 
 
