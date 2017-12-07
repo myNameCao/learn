@@ -62,7 +62,17 @@ var isFunction = isType('Function');
 
 node 事件 没有 preventDefault() stopPropagation() 和stopImmediatePagation() 
 
+如果同一个事件添加超过了10个监听器将会有一条警告 调用**emitter.setMaxListeners(num)** 可以将取消这个限制 
++ ## 继承 evnets 模块 
+```js
+//继承的方法 
+var events = require('events');
+function Stream() {
+events.EventEmitter.call(this);
+}
+util.inherits(Stream, events.EventEmitter);
 
+```
 
 
 
