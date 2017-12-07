@@ -16,3 +16,15 @@
   ## 使用原则:
 
       运行时需要用到的包使用--save，否则使用--save-dev。
+  
+  ## npm update filename  
+   
+   更新版本
+   
+   ## npm list plugin -g 
+   
+   查看全局的插件版本
+   
+   ## npm list plugin -save  
+   
+   查看本地的插件版本
