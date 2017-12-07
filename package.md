@@ -28,3 +28,7 @@
    ## npm list plugin -save  
    
    查看本地的插件版本
+   
+   ## npm uninstall plugin -g  
+   
+    卸载全局插件
