@@ -13,11 +13,11 @@
 + 之后运行npm install命令时，会自动安装msbuild到node_modules目录中
 + 之后运行npm install --production或者注明NODE_ENV变量值为production时，不会自动安装msbuild到node_modules目录中
 
-  ## 使用原则:
+   ## 使用原则:
 
-      运行时需要用到的包使用--save，否则使用--save-dev。
+   运行时需要用到的包使用--save，否则使用--save-dev。
   
-  ## npm update plugin   
+   ## npm update plugin   
    
    更新版本
    
