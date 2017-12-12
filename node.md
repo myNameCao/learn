@@ -73,6 +73,26 @@ events.EventEmitter.call(this);
 util.inherits(Stream, events.EventEmitter);
 
 ```
+## node  和 v8  
+ 
+node 是构建早chrome  的javasprict 运行平台的  2009 年 node 创始人选择了v8 作为 node 的javascript 
+脚本引擎 。，
 
 
+在Node中通过JavaScript使用内存时就会发现只能使用部分内存（64􀍮系统下约为1.4 GB，32􀍮系统下约为0.7 GB。在
+这样的限制下，将会导致Node无法直接操作大内存对象，比如无法将一个2 GB的文件读入内存
+中进行字符串分析处理，即使物理内存有32 GB。这样在单个Node进程的情况下，计算机的内存
+资源无法得到充足的使用。
 
+## v8  对象的分配 
+
+node 
+> process.memoryUsage() 
+//
+```js 
+{
+rss:mun
+heaptoral:num
+headUsed:num
+}
+```
