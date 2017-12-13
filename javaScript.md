@@ -33,3 +33,30 @@ console.log(a.count());// 1
 console.log(b.count());// 9 没有重置 b 
   
  ```
+ 
+##  从技术角度 将闭包合并成属性存取器 
+
+使用参数来保存私有状态 
+``` js 
+function counter(n) {
+    return {
+        get  count(){
+            return n++
+        },
+        set  count(m){
+            if(m>n)n=m
+            else throw Error('你设置的不对')
+        }
+    }
+};
+var  c = counter(1000);
+c.count  // 他不是一个函数  ** 注意 **
+console.log(c.count) //1001
+c.count=2000;
+console.log(c.count)//2000
+c.count
+
+```
+
+**以上是在同一个作用域中定义两个闭包 这两个闭包共享同样的作用域( 变量或私有变量)这是一个非常重要的技术**
+
