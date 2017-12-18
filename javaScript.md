@@ -60,3 +60,15 @@ c.count
 
 **以上是在同一个作用域中定义两个闭包 这两个闭包共享同样的作用域( 变量或私有变量)这是一个非常重要的技术**
 
+
+## Array.length 
+```js 
+
+var arr=[1,2,3,4,5,6]
+// Object.defineProperty(arr,'length',{writable:false})
+arr.length=1
+console.log(arr)// [1,2,3,4,5,6]
+
+```
+
+
