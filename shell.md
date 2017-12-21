@@ -62,6 +62,7 @@ pwd ;ls  cd filename ;pwd
 
 ## history  显示你用过的命令
 
+## alias  设置别名 
 
-
+alias li='ls -al' 定义自己的别名
 
