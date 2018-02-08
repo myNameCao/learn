@@ -100,9 +100,13 @@ hehe(); // 我被赋值给变量hehe 说明函数申明在先 变量申明在后
 
 ```js
 function set(){
-this.values={};
-this.n=0;
-
+    this.values={};
+    this.n=0;
+    if(arguments.length==1&&isArrayLike(arguments[0]){
+      this.add.play(this,arguments[0])
+    }else if(arguments.length>0){
+      this.add.play(this,arguments);
+    }
 }
 ```
 
