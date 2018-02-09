@@ -109,6 +109,33 @@ function set(){
     }
 }
 ```
+## getter 和 setter 对象的存取器属性 
++ 和数据属性不同，存取器属性 ，不具可写行 ，如果属性同时具有getter 和setter 方法 那么他就是有读写属性  
++ 定义存取器属性最简单的的方法是使用对象的直接量语的一种扩展写法 
+
+```js
+var  o= {
+         data_prop:value,
+         get accessor_prop(){
+             //     函数体
+         },
+         set accessor_prop ( value){
+             //     函数体
+         }
+     }
+ ？
+//  修改对象的set和get 属性  
+var o={};
+
+Object.definepeoperty(o,name,{
+value:1,
+writable:true,
+enumerable:false,
+configurable:fals
+})
+```
+
+
 
 
 
