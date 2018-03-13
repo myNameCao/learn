@@ -7,3 +7,4 @@
 + mkdir  创建文件
 +  rd  删除文件夹
 + del  删除文件
++ rd /s/q  filename   删除非空文件
