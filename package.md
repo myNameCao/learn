@@ -32,6 +32,7 @@
    ## npm uninstall plugin -g  
    
     卸载全局插件
-   ## npm list  
-   
+    
+## npm install 
+   
    计算机会默认安装在本地
