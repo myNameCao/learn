@@ -4,6 +4,7 @@
 + git  checkout name 切换分支
 +  git remote add origin ‘youlocation’  关联远程仓库
 +   rm -rf .git  删除本地git init 
++  git branch  name   创建分支
 
 
 
