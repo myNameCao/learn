@@ -36,3 +36,7 @@
 ## npm install 
    
    计算机会默认安装在本地
+   
+## npm list plug  
+
+返回插件的版本号 
