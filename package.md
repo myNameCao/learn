@@ -40,3 +40,7 @@
 ## npm list plug  
 
 返回插件的版本号 
+
+##  npm run order  --argument   
+ 运行命令添加的参数  
+ 
