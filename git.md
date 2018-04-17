@@ -5,6 +5,7 @@
 +  git remote add origin ‘youlocation’  关联远程仓库
 +   rm -rf .git  删除本地git init 
 +  git branch  name   创建分支
++  git push origin new_branch  远程创建分支
 
 
 
