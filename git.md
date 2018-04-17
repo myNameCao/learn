@@ -6,6 +6,8 @@
 +   rm -rf .git  删除本地git init 
 +  git branch  name   创建分支
 +  git push origin new_branch  远程创建分支
+ + git checkout -b updateUi origin/updateUi  常见关联
+ 
 
 
 
