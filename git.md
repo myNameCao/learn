@@ -9,6 +9,8 @@
 + git checkout -b updateUi origin/updateUi  常见关联
 + git  reset --hard HEAD   回退一个版本 
 + git  reset --hard commit_id  回退到任意的版本  版本号只要前几个就好 
++ git branch -r -d origin/branch-name  删除远程的分支
++ git branch -d <BranchName>   删除本地分支
  
 
 
