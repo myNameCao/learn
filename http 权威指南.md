@@ -1,7 +1,8 @@
 # http 权威指南 
  
-  +  url 提供了一种定位英特网上任意资源的手段，这些资源时可以通过各种不同的方案来访问的\
-
+  +  url 提供了一种定位英特网上任意资源的手段，这些资源时可以通过各种不同的方案来访问的
+  +  uri  有两种形式 一种是 URL 和URN
+  +  URL  统一资源定位符 URN 统一资源名
 **< scheme>://< user>:< password>@< host>:< port>/< path>;< params>?< query>#< frag>**
  
 主要的是方案（scheme） 主机（host） 路径（path）  
