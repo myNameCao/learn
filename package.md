@@ -18,9 +18,9 @@
    运行时需要用到的包使用--save，否则使用--save-dev。
   
    ## npm update plugin   
-   
    更新版本
-   
+   ##  npm view plugin version 
+   查看最新的版本
    ## npm list plugin -g 
    
    查看全局的插件版本
