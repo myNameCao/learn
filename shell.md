@@ -64,5 +64,5 @@ pwd ;ls  cd filename ;pwd
 
 ## alias  设置别名 
 
-alias li='ls -al' 定义自己的别名
+alias li='ls -al' 定义自己的别名(如果想写永久的可以在.bashrc  写 永久的)
 
