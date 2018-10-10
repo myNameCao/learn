@@ -19,8 +19,8 @@
 + git branch -d <BranchName>   删除本地分支
 + git fetch -p origin  更新远程分支  
  
-+ 
-
++ ## workspace  _____index  _____  local repository  ______ remote resository  
+  ## 本地代码  _______add  * _________ commit -m ________________push       
 
 
 
