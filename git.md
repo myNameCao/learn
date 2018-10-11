@@ -18,6 +18,8 @@
 + git push origin --delete <BranchName> 删除远程的分支
 + git branch -d <BranchName>   删除本地分支
 + git fetch -p origin  更新远程分支  
+ +git push origin master —force   强推   
+ 
  
 + ## workspace  _____index  _____  local repository  ______ remote resository  
   ## 本地代码  _______add  * _________ commit -m ________________push       
