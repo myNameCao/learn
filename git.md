@@ -10,8 +10,8 @@
 +   rm -rf .git  删除本地git init 
 
 +  git branch  name   创建分支
-
-+  git push origin new_branch  远程创建分支
++  git show   commit_id   查看
++  git push origin new_branch  某次远程创建分支
 + git checkout -b updateUi origin/updateUi  常见关联
 + git  reset --hard HEAD   回退一个版本 
 + git  reset --hard commit_id  回退到任意的版本  版本号只要前几个就好 版本回退 
