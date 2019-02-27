@@ -14,7 +14,9 @@
 +  git push origin new_branch  远程创建分支
 + git checkout -b updateUi origin/updateUi  常见关联
 + git  reset --hard HEAD   回退一个版本 
-+ git  reset --hard commit_id  回退到任意的版本  版本号只要前几个就好 版本回退 但是代码还是 本地的 需Git checkout .
++ git  reset --hard commit_id  回退到任意的版本  版本号只要前几个就好 版本回退 
++ git  reset  commit_id   对应的版本回退  版本号只要前几个就好  但是代码还是 本地的 需Git checkout .
++ git   blame   查看某一个文件最近一次谁修改的    后面加版本号  是相对于版本之前的的修改记录
 + git  checkout .   改变的取消
 + git push origin --delete <BranchName> 删除远程的分支
 + git branch -d <BranchName>   删除本地分支
