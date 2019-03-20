@@ -29,7 +29,7 @@ import { str, log } from 'a'; //也可以分开写两次，导入的时候带花
 
 
 
-2.export default
+//export default
 //a.js
 const str = "blablabla~";
 export default str;
