@@ -24,6 +24,9 @@ export const str = "blablabla~";
 export function log(sth) { 
   return sth;
 }
+
+// export { str, log}  或者是第二种
+
 //b.js
 import { str, log } from 'a'; //也可以分开写两次，导入的时候带花括号
 
