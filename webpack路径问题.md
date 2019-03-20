@@ -18,5 +18,27 @@ path.resolv（'./src'）// 返回的当前文件的的绝对路径加上后面�
 
 export  和export  default  均可以导出常量 函数  文件 模块   
 
+```js
+ //a.js
+export const str = "blablabla~";
+export function log(sth) { 
+  return sth;
+}
+//b.js
+import { str, log } from 'a'; //也可以分开写两次，导入的时候带花括号
 
-在文件和模块中 export 和import   在文件中可以出现多个; export default 只能出现一个   
+
+
+2.export default
+//a.js
+const str = "blablabla~";
+export default str;
+对应的导入方式：
+
+//b.js
+import str from 'a'; //导入的时候没有花括号
+
+
+```
+
+ 在文件和模块中 export 和import   在文件中可以出现多个; export default 只能出现一个   
