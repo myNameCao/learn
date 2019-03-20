@@ -1,4 +1,4 @@
-## webpack 路径问题
+## webpack 路径问题  和引入导出的关系
 
 + ### context
 
@@ -13,3 +13,10 @@ this.set("context", process.cwd());
 ```js 
 path.resolv（'./src'）// 返回的当前文件的的绝对路径加上后面的路劲
 ```
+
++ ###   export 和 export  default  的区别
+
+export  和export  default  均可以导出常量 函数  文件 模块   
+
+
+在文件和模块中 export 和import   在文件中可以出现多个; export default 只能出现一个   
