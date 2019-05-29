@@ -6,6 +6,8 @@
 
 + git diff  --name-status      只查看修改的文件名字
 
++ git clean -df     清空文件目录
+
 + git  checkout name 切换分支
 
 +  git remote add origin ‘youlocation’  关联远程仓库
