@@ -4,6 +4,8 @@
 
 + git remote rm origin    删除远程仓库
 
++ git diff  --name-status      只查看修改的文件名字
+
 + git  checkout name 切换分支
 
 +  git remote add origin ‘youlocation’  关联远程仓库
