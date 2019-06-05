@@ -29,7 +29,9 @@
  
  
 + ## workspace  _____index  _____  local repository  ______ remote resository  
-  ## 本地代码  _______add  * _________ commit -m ________________push       
+  ## 本地代码  _______add  * _________ commit -m ________________push    
+  
++  git  reset HEAD   取消git  add  的内容  加上 Git checout  . 取消修改
 
 
 
