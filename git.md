@@ -33,6 +33,10 @@
   
 +  git  reset HEAD   取消git  add  的内容  加上 Git checout  . 取消修改
 
++  git tag 'name'  添加tag   
+
++  git push origin  --tags    推送所有的tags  
+
 
 
  
