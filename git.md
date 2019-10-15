@@ -4,7 +4,23 @@
 
 + git remote rm origin    删除远程仓库
 
+
+### git  diff  
 + git diff  --name-status      只查看修改的文件名字
+
++  git  diff head --<filename>   缓存区和版本库 的区别 
+ 
++  git  diff  工作区和缓存区的区别
+
+假设仓库里已提交的有五个版本，依次提交的是A、B、C、D、E
+
++ git diff HEAD^  版本 E 和D 的区别 
+
++ git diff  HEAD^^   当前 版本 和C  版本的区别
+
+### end 
+
+
 
 + git clean -df     清空文件目录
 
