@@ -4,6 +4,8 @@
 
 + git remote rm origin    删除远程仓库
 
++  git rm -r --cached . 清除缓存
+
 
 ### git  diff  
 + git diff  --name-status      只查看修改的文件名字
