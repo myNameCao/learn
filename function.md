@@ -36,6 +36,16 @@
       o.m=f
       o.m()
       delete o.m
+      
+      Math.max.apply(Math,[1,2,4,6])
+      
+      
+      [1,2,3,4,5,3].reduce(funtion(x,y){
+      return x>y?x:y
+      })
+      
+      
+      
     
      ```
  
