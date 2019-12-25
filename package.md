@@ -1,3 +1,5 @@
+# npm 
+
 ### npm view plug version
 查看插件的最新的版本
 
@@ -27,32 +29,45 @@
 
 运行时需要用到的包使用--save，否则使用--save-dev。
 
-## npm update plugin   
+### npm update plugin   
 更新版本
 ##  npm view plugin version 
 查看最新的版本
-## npm list plugin -g 
+### npm list plugin -g 
 
 查看全局的插件版本
 
-## npm list plugin -save  
+### npm list plugin -save  
 
 查看本地的插件版本
 
-## npm uninstall plugin -g  
+### npm uninstall plugin -g  
 
 卸载全局插件
 
-## npm install 
+### npm install 
 
 计算机会默认安装在本地
 
-## npm list plug  
+### npm list plug  
 
 返回插件的版本号 
 
-##  npm run order  --argument   
+###  npm run order  --argument   
 运行命令添加的参数  
+
+# yarn 
+
+
+### yran global add plugin 
+
+全局安装插件 
+
+### yarn remove plugin 
+
+删除插件
+
+
 
 
 
