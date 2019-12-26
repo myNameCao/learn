@@ -1,8 +1,11 @@
-+ git branch -a 查看分支
+
+###  git remote 
 
 + git remote -v  查看远程库
 
 + git remote rm origin    删除远程仓库
+
++  git remote add origin ‘youlocation’  关联远程仓库
 
 +  git rm -r --cached . 清除缓存
 
@@ -13,6 +16,7 @@
 +  git  diff head --<filename>   缓存区和版本库 的区别 
  
 +  git  diff  工作区和缓存区的区别
+
 
 #####  假设仓库里已提交的有五个版本，依次提交的是A、B、C、D、E
 
@@ -28,7 +32,8 @@
 
 + git  checkout name 切换分支
 
-+  git remote add origin ‘youlocation’  关联远程仓库
++ git branch -a 查看分支
+
 +   rm -rf .git  删除本地git init 
 
 +  git branch  name   创建分支
