@@ -62,6 +62,8 @@
 
 + git push origin  --tags    推送所有的tags  
 
++ git pull origin master --allow-unrelated-histories
+
 
 ### branch 
 
