@@ -15,4 +15,5 @@ Ctrl+P+Q
 
 ### 进入容器  
 
- docker attach id 
+docker exec -it `id`  /bin/bash
+
