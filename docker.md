@@ -17,3 +17,7 @@ Ctrl+P+Q
 
 docker exec -it `id`  /bin/bash
 
+ ### 查看当前的docker 
+ 
+ docker ps  -a 
+
