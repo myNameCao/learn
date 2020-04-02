@@ -83,9 +83,9 @@
  
 ### tag
 
-+ git tag [name] 添加tag  
-+ git push origin [name]
-+ git tag -d [name]  删除本地
++ git tag [tagName] 添加tag  
++ git push origin [tagName]
++ git tag -d [tagName]  删除本地
 
  ### 流程 
  
