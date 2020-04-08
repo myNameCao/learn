@@ -66,3 +66,5 @@ pwd ;ls  cd filename ;pwd
 
 alias li='ls -al' 定义自己的别名(如果想写永久的可以在.bashrc  写 永久的)
 
+scp -r * root@39.98.49.4:/var/www/html/chope
+
