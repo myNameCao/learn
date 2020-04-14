@@ -86,6 +86,7 @@
 + git tag [tagName] 添加tag  
 + git push origin [tagName]
 + git tag -d [tagName]  删除本地
++ git tag  查看 所有tag
 
  ### 流程 
  
