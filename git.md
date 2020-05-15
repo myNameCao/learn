@@ -76,6 +76,8 @@
 + git push origin new_branch  远程创建分支
  
 + git branch -a 查看分支
+
++ git checkout -b 本地分支名x origin/远程分支名x   拉去一个远程分支 到本地
  
 + git checkout -b ```branchname``` origin/```branchname```  常见关联
  
