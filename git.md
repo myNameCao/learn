@@ -89,6 +89,7 @@
 + git push origin [tagName]
 + git tag -d [tagName]  删除本地
 + git tag  查看 所有tag
++ git tag -l -n 查看分支和 标注
 
  ### 流程 
  
