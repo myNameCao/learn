@@ -92,8 +92,10 @@
 + git tag -l -n 查看分支和 标注
 
  ### 流程 
- 
++ git的 四大区域  工作区—— 缓存区—— 版本库（本地仓库）—— 远程库
+
 + ## workspace  _____index  _____  local repository  ______ remote resository  
+  
 
   ## 本地代码  _______add  * _________ commit -m ________________push    
   
