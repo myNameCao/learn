@@ -42,7 +42,11 @@
 
 ### 三大分区的好处 （通过 checkout/stash/reset 等命令） 通过不同的参数搭配使用
 
-+ <tag>
++ `git reset - soft`  缓存区回滚到工作区，重新add 
+
++ `git checkout`  放弃修改
+
++ `git stash& checkout`  代码写一半 忘记切换分支
 
 
 
