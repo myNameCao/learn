@@ -1,3 +1,7 @@
+# Git 的常使用的命令和方法
+
+
+
 
 ###  remote 
 
@@ -18,9 +22,11 @@
 
 + git diff  --name-status      只查看修改的文件名字
 
-+ git diff head --<filename>   缓存区和版本库 的区别 
++ git diff head --<filename>   工作区vs版本库
  
-+ git  diff  工作区和缓存区的区别
++ git  diff -cached  缓存区vs版本库
+ 
++ git  diff  工作区vs缓存区
 
 
 ***假设仓库里已提交的有五个版本，依次提交的是A、B、C、D、E***
@@ -32,9 +38,11 @@
 
 ### show 
 
++ git show  commit_id 查看
 
+### 三大分区的好处 （通过 checkout/stash/reset 等命令） 通过不同的参数搭配使用
 
-+  git show   commit_id   查看
++ <tag>
 
 
 
@@ -92,6 +100,7 @@
 + git tag -l -n 查看分支和 标注
 
  ### 流程 
+ 
 + git的 四大区域  工作区—— 缓存区—— 版本库（本地仓库）—— 远程库
 
 + ## workspace  _____index  _____  local repository  ______ remote resository  
