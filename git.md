@@ -46,7 +46,7 @@
 
 + `git checkout`  放弃修改
 
-+ `git stash& checkout`  代码写一半 忘记切换分支
++ `git stash & checkout`  代码写一半 忘记切换分支
 
 
 
