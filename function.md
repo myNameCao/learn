@@ -58,7 +58,7 @@
  + 函数的柯里化还常常作为函数绑定的一部分包含在其中,构造更为复杂的bind() 函数
  
  ```js  
-  function bind (fn,context) {
+function bind (fn,context) {
     var  args = Array.prototype.slice.call(argument,2)
      return function(){
      var interargs = Array.prototype.slice.call(arguments)
@@ -103,19 +103,19 @@ Function.prototype.myCall = function(obj,...arg){
     obj._fn_(...arg);
     delete obj._fn_;
 }
-      //测试
-      let test = {
-          name:'test'
-      }
-      let o = {
-          name:'o',
-          fn:function(){
-              console.log(this.name, ...arguments);  //这里把参数显示一下
-          }
-      }
-      o.fn(1,2,3) // "o" 1 2 3
-      o.fn.call(test,1,2,3) // "test" 1 2 3
-      o.fn.myCall(test,1,2,3) // "test" 1 2 3
+//测试
+let test = {
+  name:'test'
+}
+let o = {
+  name:'o',
+  fn:function(){
+      console.log(this.name, ...arguments);  //这里把参数显示一下
+  }
+}
+o.fn(1,2,3) // "o" 1 2 3
+o.fn.call(test,1,2,3) // "test" 1 2 3
+o.fn.myCall(test,1,2,3) // "test" 1 2 3
   ```
   
   
