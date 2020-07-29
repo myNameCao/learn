@@ -43,6 +43,17 @@
         
      }
  }
+ 
+ function add (num1,num2){
+ return num1+num2
+ }
+ var curryAdd =curry(add,5)
+ console.log(curryAdd(3)) // 8
+ 
+ //或者两个参数都绑定了
+  var curryAdd =curry(add,1,3)
+ console.log(curryAdd()) // 4
+ 
  ```
   
    
