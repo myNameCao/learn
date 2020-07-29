@@ -140,7 +140,7 @@ Function.prototype.myCall = function(obj,...arg){
 
 ```
  
-### bind
+### Bind
 
 + 当在函数f()上调用bind ()方法 并传入一个对象o 作为参数 这个方法返回一个新的函数
 + (以函数调用的方法)调用新的函数将会把原始的函数f()当做o的方法调用 
