@@ -93,9 +93,11 @@
       [1,2,3,4,5,3].reduce(funtion(x,y){
       return x>y?x:y
       })
-      
-      
       // 只需要在原来的基础上 用下拓展运算符 剩余运算符即可
+```
+
+ 
+```js
         Function.prototype.myCall = function(obj,...arg){
             obj._fn_ = this;
             obj._fn_(...arg);
@@ -114,7 +116,12 @@
               o.fn(1,2,3) // "o" 1 2 3
               o.fn.call(test,1,2,3) // "test" 1 2 3
               o.fn.myCall(test,1,2,3) // "test" 1 2 3
-     // 不使用es6 的写法
+  ```
+  
+  
+  ###  不使用es6 的写法   
+     
+    ```js 
           Function.prototype.myCall = function(obj){
           let arg = [];
           for(let i = 1 ; i<arguments.length ; i++){
@@ -130,8 +137,13 @@
           eval( 'obj._fn_(' + arg + ')' ) // 字符串拼接，JS会调用arg数组的toString()方法，这样就传入了所有参数
           delete obj._fn_;
         }
- ```
-  ### Bind   
+   ```
+ 
+ 
+ 
+ 
+ 
+### bind
   
   + 当在函数f()上调用bind ()方法 并传入一个对象o 作为参数 这个方法返回一个新的函数
   + (以函数调用的方法)调用新的函数将会把原始的函数f()当做o的方法调用 
