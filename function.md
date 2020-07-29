@@ -55,6 +55,19 @@
  console.log(curryAdd()) // 4
  
  ```
+ + 函数的柯里化还常常作为函数绑定的一部分包含在其中,构造更为复杂的bind() 函数
+ 
+ ```js  
+  function bind (fn,context) {
+    var  args = Array.prototype.slice.call(argument,2)
+     return function(){
+     var interargs = Array.prototype.slice.call(arguments)
+     var finalArgs = args.concat(interArgs)
+      return fn.apply(context,finalArgs)
+     }
+ }
+ 
+ ```
   
    
    
