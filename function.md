@@ -21,11 +21,33 @@
    }
 
    ```
-   +  函数的prototype 属性
-    + 每个对象都有一个__proto__属性，并且指向它的prototype原型对象
-    + 每个构造函数都有一个prototype原型对象
-    + prototype原型对象里的constructor指向构造函数本身
-     ***call*** 和 ***apply***
+   
+   + 每个对象都有一个__proto__属性，并且指向它的构造函数的prototype原型对象
+   + 每个构造函数都有一个prototype原型对象
+   + prototype原型对象里的constructor指向构造函数本身
+   
+   ### 函数的柯里化
+   
+  + 用于创建已经设置好的了一个或多个参数的函数
+  + 函数的柯里化的基本方法和函数绑定是一样的：使用一个闭包返回一个函数
+  + 两者的区别是：当函数被调用时,返回的函数还需要设置一些传入的参数
+  
+  
+ ``` js
+ function curry (fn) {
+    var  args = Array.prototype.slice.call(argument,1)
+     return function(){
+     var interargs = Array.prototype.slice.call(arguments)
+     var finalArgs = args.concat(interArgs)
+      return fn.apply(null,finalArgs)
+        
+     }
+ }
+ ```
+  
+   
+   
+   ###  ***call*** 和 ***apply***
      
      可以看做是方法的借用 通过调用方法间接的调用函数，call 和apply 的第一个实参是要调用函数的的母函数，他是调用上下文，在函数体内通过this 来获得它的引用，要想以对象o的方法来调用函数f() ,可以使用call() 和apply()
      
