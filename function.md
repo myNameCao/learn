@@ -115,7 +115,86 @@ function bind (fn,context) {
   }
    
  }
+
+then(onFulfilled, onRejected) {
+    onFulfilled = typeof onFulfilled === 'function' ? onFulfilled:v=>v
+    onRejected = typeof onRejected === 'function' ? onRejected:e=>{throw e}
+    let promise2 = new PromiseA((resolve, reject) => {
+        if (this.status === RESOLVED) {
+            setTimeout(() => {
+                try {
+                    let x = onFulfilled(this.value);
+                    resolvePromise(promise2, x, resolve, reject);
+                } catch (e) {
+                    reject(e)
+                }
+            });
+        }
+        if (this.status === REJECTED) {
+            setTimeout(() => {
+                try {
+                    let x = onRejected(this.reason);
+                    resolvePromise(promise2, x, resolve, reject);
+                } catch (e) {
+                    reject(e)
+                }
+            });
+        }
+        if (this.status === PENDING) {
+            this.onResolvedCallbacks.push(() => {
+                setTimeout(() => {
+                    try {
+                        let x = onFulfilled(this.value);
+                        resolvePromise(promise2, x, resolve, reject);
+                    } catch (e) {
+                        reject(err);
+                    }
+                });
+
+            })
+            this.onRejectedCallbacks.push(() => {
+                setTimeout(() => {
+                    try {
+                        let x = onRejected(this.reason);
+                        resolvePromise(promise2, x, resolve, reject);
+                    } catch (e) {
+                        reject(err);
+                    }
+                });
+            })
+        }
+    })
+    return promise2;
+ }
  
+ 
+ function resolvePromise(promise2, x, resolve, reject) {
+
+        if (promise2 === x) {
+            return reject(new TypeError('返回的promise和当前promise不能是同一个对象哦，会嵌入死循环'))
+        }
+        if ((typeof x === 'object' && x !== null) || typeof x === 'function') {
+            try {
+                let then = x.then;
+                if (typeof then === 'function') {
+                    then.call(x,y=> {
+                        resolvePromise(promise2, y, resolve, reject)
+                    },r=> {
+                        reject(r)
+                    }
+                    )
+                } else {
+                    resolve(x)
+                }
+            } catch (err) {
+                reject(err)
+            }
+        } else {
+            resolve(x);
+        }
+        
+        
+}
  
  ```
   
