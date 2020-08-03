@@ -55,7 +55,7 @@
  console.log(curryAdd()) // 4
  
  ```
- + 函数的柯里化还常常作为函数绑定的一部分包含在其中,构造更为复杂的bind() 函数  ***(体现一)***
+ + 函数的柯里化还常常作为函数绑定的一部分包含在其中,构造更为复杂的bind() 函数  ***( 体现一 )***
  
  ```js  
 function bind (fn,context) {
@@ -66,6 +66,56 @@ function bind (fn,context) {
       return fn.apply(context,finalArgs)
      }
  }
+ 
+ ```
+ 函数柯里化  也可以是返回一个对象  ***（体现二）***
+ 
+ ```js
+ // promise 的实现
+ 
+ class PromiseA {
+   coustructor(executor){...}
+   then(){...}
+   catch(err){
+     this.then(null,err)
+   }
+ }
+ 
+ 
+ 
+ constructor(executor){
+   this.status =  'PENDING';
+   this.value = 'undefined';
+   this.reason = 'undefined';
+   this.onResolvedCallbacks=[];
+   this.onRejectedCallbacks=[];
+   let resolve = (value) = >{
+     if(value instanceof promiseA){
+        value.then(resolve.reject)
+        return 
+     }
+     if(this.status==='PENDING'){
+            this.value=value;
+            this.status= 'RESOLVED'
+            this.onResolvedCallbacks.forEach(fn=>fn())
+     }
+  }
+  
+  let reject = (reason) =>{
+      if(this.status== 'PENDING'){
+         this.reason =  reason ;
+         this.status ='REJECTED';
+         this.onRejectedCallbacks.forEach(fn=>fn())
+      }
+  }
+  try{
+    executor(resolve,reject)
+  }catch(e){
+     reject(e)
+  }
+   
+ }
+ 
  
  ```
   
