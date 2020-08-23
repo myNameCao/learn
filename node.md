@@ -98,3 +98,43 @@ heaptoral:num
 headUsed:num
 }
 ```
+
+## node 的事件循环
+
+* Macrotask: `seTimeout` ` setInterval` `setImmediate`  `requestAnmation`
+
+* Microtask: `process.nexttick` `promise.then`  `Object.observe`  `MutationObsever`
+
+node  可以说有4个宏任务队列 和两个微任务队列  但是 执行宏任务有 6个阶段 ,在每个阶段 执行完对应的 宏任务队列
+
+*  1 timers(计时器阶段)： 执行 setimeout 和setinterval  的回调函数   
+
+*  2 o/L  callback   处理网络 流 tcp 错误   
+
+*  3  idle prepare    (node内部使用 阶段 )
+
+*  4 poll (轮询)
+
+*  5 checkout(检查) 存放 setImmedidate 回调 
+
+*  6  close  callback 关闭回调  sockect.on('close')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
