@@ -60,6 +60,12 @@
 + git  reset HEAD   取消git  add  的内容  加上 Git checout  . 取消修改
 + git  checkout .   改变的取消
 
+###  revert  
+
+内容回退到某个版本，但是 版本号添加一个commit
+
+
+
 ### blame
 
 + git   blame   查看某一个文件最近一次谁修改的    后面加版本号  是相对于版本之前的的修改记录
