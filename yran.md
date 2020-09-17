@@ -35,7 +35,7 @@
          
        查看 yarn --version
       
-      >前端 windon 
+      >前端 window 
       
        下载  npm i yarn  -g 
        
