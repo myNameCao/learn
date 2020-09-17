@@ -24,3 +24,26 @@
 
        1.所有的依赖包，不管他被不同的库间接关联引用多少次，安装这个包时，只会从一个注册来源去装，要么是 npm 要么是 bower, 防止出现混乱不一致。
 
+
+##  项目升级 
+
+1. 全局下载yarn  
+      > 服务器 
+      
+      下载`pacman -S yarn`
+         
+      查看`yarn --version`
+      
+      >前端 windon 
+      
+     下载` npm i yarn  -g `
+     
+     查看`yarn --version`
+     
+ 2. 项目删除 `node_modules` 文件
+ 
+ 3. yarn 下载
+ 
+ >在项目 跟目录(package.json 文件同级) 执行  `yarn`
+      
+      
