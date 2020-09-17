@@ -28,23 +28,25 @@
 ##  项目升级 
 
 1. 全局下载yarn  
+
       > 服务器 
       
-       下载`pacman -S yarn`
+       下载 pacman -S yarn
          
-       查看`yarn --version`
+       查看 yarn --version
       
       >前端 windon 
       
-       下载` npm i yarn  -g `
+       下载  npm i yarn  -g 
        
-       查看`yarn --version`
+       查看 yarn --version
      
  2. 项目删除 node_modules 
+ 
  `rm node_modules -rf `
  
  3. yarn 下载
  
- >在项目 跟目录(package.json 文件同级) 执行  `yarn`
+        在项目 跟目录(package.json 文件同级) 执行 yarn
       
       
