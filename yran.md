@@ -30,17 +30,18 @@
 1. 全局下载yarn  
       > 服务器 
       
-      下载`pacman -S yarn`
+       下载`pacman -S yarn`
          
-      查看`yarn --version`
+       查看`yarn --version`
       
       >前端 windon 
       
-     下载` npm i yarn  -g `
+       下载` npm i yarn  -g `
+       
+       查看`yarn --version`
      
-     查看`yarn --version`
-     
- 2. 项目删除 `node_modules` 文件
+ 2. 项目删除 node_modules 
+ `rm node_modules -rf `
  
  3. yarn 下载
  
