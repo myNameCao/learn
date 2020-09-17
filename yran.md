@@ -47,6 +47,6 @@
  
  3. yarn 下载
  
-        在项目 跟目录(package.json 文件同级) 执行 yarn
+        在项目 根目录(package.json 文件同级)  执行 yarn
       
       
