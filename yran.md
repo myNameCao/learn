@@ -42,8 +42,8 @@
        查看 yarn --version
      
  2. 项目删除 node_modules 
- 
- `rm node_modules -rf `
+  
+      `rm node_modules -rf `
  
  3. yarn 下载
  
