@@ -1,6 +1,7 @@
 # npm 
 
-### npm cache clean --force
+### npm cache clean --force  
+// 清除 npm 缓存
 
 ### npm view plug version
 查看插件的最新的版本
