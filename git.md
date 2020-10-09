@@ -13,7 +13,7 @@
 
 + git rm -r --cached . 清除缓存
 
-+ git clean -df     清空文件目录
++ git clean -df     清空文件目录(git checkout . 对新增的文件不好用)
 
 + rm -rf .git  删除本地git init 
 
