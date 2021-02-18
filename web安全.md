@@ -39,7 +39,8 @@
   
   * 特殊字符转化为 HTML 实体，这样在输出时，恶意的代码就无法执行了
   *  提交 代码字符串 保存到服务器 ，用户进入后 被动 被攻击
-  * httpOnly:由于很多的xss 攻击都是盗用 cookie因此  可以通过 使用 httponly 属性防止直接通过 coument.cookie 来获取 cookie
+  * 使用 HttpOnly 属性。避免js脚本操作cookie，coument.cookie 来获取 cookie,即使页面被注入了恶意 JavaScript 脚本，也是无法获取到设置了 HttpOnly 的数据。因此一些比较重要的数据我们建议设置 HttpOnly 标志。
+  * 对于基于DOM的XSS攻击，使用HTTPS进行传输html，可以避免中间人能更改html文件。
   
   ### CSRF 跨站请求伪造
   
