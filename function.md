@@ -298,7 +298,46 @@ g(2) // 3
     }
 }
 ```
+
+
+ ### 函数的节流
+ * 一个函数在一个周期内执行一次后，只有大于执行的周期才会执行第二次
+
+```js
+
+function throttle(fn,delay){
+    var lastTime= 0 
+    return function(){
+       var nowTime = Data.now()
+       if( nowTime- lastTime>delay){
+           fn.call(this)
+           lastTime = nowTime
+       }
+    }
+}
+document.onscroll= throttle(function(){console.log('时间被触发')},2000}
+
+```
   
+###  防抖函数 
+
+*  一个需要频繁触发的函数，在规定时间内，只有最后一次生效，前面的全部失效
+```js
+
+function debounce(fn, delay ){
+    var timer =null
+    return function(){
+        clearTimeout(timer)
+        timer= setTimeout(function(){
+            fn.call(this)
+        },delay)
+    }
+
+
+}
+
+
+```
 
   
       
