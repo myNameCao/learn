@@ -91,6 +91,9 @@
  
 + git branch  name   创建分支
 
++ git checkout --orphan new_branch  创建一个没有历史记录的分支
+ 
+
 + git push origin new_branch  远程创建分支
  
 + git branch -a 查看分支
